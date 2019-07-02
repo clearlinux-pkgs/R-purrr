@@ -1,6 +1,23 @@
 # This file contains recursive sources that require this package
+R-AmesHousing
+R-adegenet
+R-brms
+R-dtplyr
+R-fs
+R-ggridges
+R-ggvis
 R-janitor
+R-pkgdown
+R-plotly
 R-promises
+R-ritis
 R-roxygen2
+R-rstanarm
+R-shinystan
+R-solrium
 R-styler
+R-tidyr
 R-tidyselect
+R-tidyverse
+R-usethis
+R-zeallot
