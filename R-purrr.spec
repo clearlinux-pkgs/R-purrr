@@ -4,18 +4,16 @@
 #
 Name     : R-purrr
 Version  : 0.3.2
-Release  : 22
+Release  : 23
 URL      : https://cran.r-project.org/src/contrib/purrr_0.3.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/purrr_0.3.2.tar.gz
 Summary  : Functional Programming Tools
 Group    : Development/Tools
 License  : GPL-3.0
 Requires: R-purrr-lib = %{version}-%{release}
-Requires: R-assertthat
 Requires: R-httr
 Requires: R-magrittr
 Requires: R-rlang
-BuildRequires : R-assertthat
 BuildRequires : R-httr
 BuildRequires : R-magrittr
 BuildRequires : R-rlang
@@ -47,10 +45,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1562089797
+export SOURCE_DATE_EPOCH=1562207343
 
 %install
-export SOURCE_DATE_EPOCH=1562089797
+export SOURCE_DATE_EPOCH=1562207343
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
