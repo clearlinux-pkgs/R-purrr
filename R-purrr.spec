@@ -4,7 +4,7 @@
 #
 Name     : R-purrr
 Version  : 0.3.2
-Release  : 24
+Release  : 25
 URL      : https://cran.r-project.org/src/contrib/purrr_0.3.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/purrr_0.3.2.tar.gz
 Summary  : Functional Programming Tools
