@@ -4,30 +4,21 @@
 #
 Name     : R-purrr
 Version  : 0.3.4
-Release  : 31
+Release  : 32
 URL      : https://cran.r-project.org/src/contrib/purrr_0.3.4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/purrr_0.3.4.tar.gz
 Summary  : Functional Programming Tools
 Group    : Development/Tools
 License  : GPL-3.0
 Requires: R-purrr-lib = %{version}-%{release}
-Requires: R-httr
 Requires: R-magrittr
 Requires: R-rlang
-BuildRequires : R-httr
 BuildRequires : R-magrittr
 BuildRequires : R-rlang
 BuildRequires : buildreq-R
 
 %description
-# purrr <img src="man/figures/logo.png" align="right" />
-<!-- badges: start -->
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/purrr)](https://cran.r-project.org/package=purrr)
-[![R build
-status](https://github.com/tidyverse/purrr/workflows/R-CMD-check/badge.svg)](https://github.com/tidyverse/purrr)
-[![Codecov test
-coverage](https://codecov.io/gh/tidyverse/purrr/branch/master/graph/badge.svg)](https://codecov.io/gh/tidyverse/purrr?branch=master)
-<!-- badges: end -->
+toolkit for R.
 
 %package lib
 Summary: lib components for the R-purrr package.
@@ -39,21 +30,22 @@ lib components for the R-purrr package.
 
 %prep
 %setup -q -c -n purrr
+cd %{_builddir}/purrr
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1587134065
+export SOURCE_DATE_EPOCH=1589761597
 
 %install
-export SOURCE_DATE_EPOCH=1587134065
+export SOURCE_DATE_EPOCH=1589761597
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
