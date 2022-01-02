@@ -1,8 +1,12 @@
 # This file contains recursive sources that require this package
+R-DiagrammeR
+R-WikidataQueryServiceR
 R-broom
 R-dbplyr
-R-fs
+R-flexsurv
 R-furrr
+R-googledrive
+R-googlesheets4
 R-janitor
 R-modelr
 R-pkgdown
@@ -11,7 +15,9 @@ R-recipes
 R-roxygen2
 R-rsample
 R-styler
+R-themis
 R-tidyr
+R-tidyrules
 R-tidyselect
 R-tidyverse
 R-usethis
