@@ -2,12 +2,14 @@
 R-DiagrammeR
 R-WikidataQueryServiceR
 R-broom
+R-broom.mixed
 R-dbplyr
 R-flexsurv
 R-furrr
 R-googledrive
 R-googlesheets4
 R-janitor
+R-modeldata
 R-modelr
 R-pkgdown
 R-plotly
