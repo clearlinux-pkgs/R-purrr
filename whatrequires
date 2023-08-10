@@ -4,6 +4,7 @@ R-WikidataQueryServiceR
 R-broom
 R-broom.mixed
 R-dbplyr
+R-dials
 R-flexsurv
 R-furrr
 R-googledrive
@@ -11,8 +12,11 @@ R-googlesheets4
 R-janitor
 R-modeldata
 R-modelr
+R-patrick
 R-pkgdown
 R-plotly
+R-profvis
+R-readODS
 R-recipes
 R-roxygen2
 R-rsample
@@ -22,3 +26,4 @@ R-tidyr
 R-tidyrules
 R-tidyverse
 R-usethis
+R-vcdExtra
